@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bat {
+            width: 400px;
+            height: 400px;
+
+        }
+
+        .field {
+            border: 1px solid gray;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            transition: transform 0.2s ease;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: red;
+            position: relative;
+            left: 512px;
+            transition: transform 1s ease-out 0.2s;
+        }
+
+        .field:hover .ball {
+            transform: translate(1500px, -200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat"
+            src="https://rukminim1.flixcart.com/image/612/612/jkk1hu80/bat/q/v/y/1162-ms-dhoni-warrior-short-handle-9332921115121-spartan-original-imaf7vhzdm4gebj4.jpeg?q=70"
+            alt="">
+        <div class="ball">
+            <h1>Ball</h1>
+        </div>
+    </div>
+    <div class="sound">
+        <audio src="images/Ball Hitting Bat Sound Effects.mp3" controls></audio>
+    </div>
+</body>
+
+</html>
